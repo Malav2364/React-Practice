@@ -1,6 +1,11 @@
+
+import Com from './comp'
 function App() {
   return (
-      <h1>Hello React  | Malav Patel</h1>
+    <>
+       <Com/>      {/*can return only one component but use empty tag to return multiple components */}
+      <h1>Msking 007</h1>
+    </>
   )
 }
 
