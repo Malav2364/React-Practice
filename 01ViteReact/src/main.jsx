@@ -10,6 +10,8 @@ function MyApp(){
     )
 }
 
+const anotherUser = 'Malav React' //a const declared and can be used as an evaluated expression in other components 
+
 // const ReactElement = {
 //     type: 'a',
 //     props: {
@@ -22,7 +24,8 @@ function MyApp(){
 const reactElement = React.createElement(
     'a',
     {href:'https://google.com', target:'_blank'},
-    'click me to visit googly'
+    'click me to visit googly',
+    anotherUser 
 )
 
 const anotherElement = (
@@ -32,5 +35,6 @@ const anotherElement = (
 )
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    reactElement        
+    // <App/>  
+    reactElement     
 ) 
