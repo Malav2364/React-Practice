@@ -9,9 +9,13 @@ function App() {
 //  let counter = 0
 
   const addValue = () => {
-    counter = counter + 1
-    setCounter(counter)   
-    if (counter > 20) {
+    // setCounter(counter + 1)   //executes one time whatever time it is written
+    // setCounter(counter => counter + 1)
+    // setCounter(counter => counter + 1) //here the bunch of code executes cause the function is defined and it coompletes the action in block of code !!
+    // setCounter(counter => counter + 1)
+    setCounter(counter => counter + 1)
+    
+    if (counter >= 20) {
       counter = counter * 0
       setCounter(counter)
     } 
